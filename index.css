@@ -1,0 +1,99 @@
+.wrapper {
+  width: 1100px;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+}
+.title-container {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+.title-container > * {
+  display: inline-block;
+}
+.title-container > img {
+  height: 120px;
+  width: 96px;
+  vertical-align: -41px;
+  margin: 0 38px;
+}
+.title-container > h1 {
+  font-size: 50px;
+  font-family: 'Shadows Into Light', cursive;
+}
+.title-container > h1:first-child {
+  text-align: right;
+}
+.title-container > h1:last-child {
+  text-align: left;
+}
+.subtitle-container {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.image-container {
+  text-align: center;
+}
+.image {
+  background-color: #ccc;
+  height: 300px;
+  width: 342px;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#image1 {
+  background-image: url(http://www.sneeze.com/wp-content/uploads/2016/04/sneezing-kids-1024x681.jpg);
+  background-size: 132%;
+  background-position: -14px 0;
+}
+
+#image2 {
+  background-image: url(http://www.speechbuddy.com/blog/wp-content/uploads/2012/09/speech116.jpg);
+  background-size: 128%;
+  background-position: -49px 0;
+}
+
+#image3 {
+  background-image: url(https://uploads1.bundoo.com/wp-content/uploads/2014/12/Why-does-my-child-need-to-pee-so-muchTHUMB-800x500.png);
+  background-size: 142%;
+  background-position: -85px 0;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 60px;
+}
+
+@media (max-width: 1100px) {
+  .wrapper {
+    width: 990px;
+  }
+
+  .image {
+    width: ;
+  }
+}
+@media (max-width: 990px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .image {
+    width: 100%;
+    margin: 0;
+    height: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .title-container img {
+    margin: 10px;
+  }
+
+  .image {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+}
