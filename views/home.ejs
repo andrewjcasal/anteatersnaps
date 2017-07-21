@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <title>Lisa Stephen Photography</title>
+  <link rel="icon" type="image/png" href=""/>
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="css/lightGallery.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body class="home">
+  <div class="wrapper">
+    <div class="header-container">
+      <%- include('partials/navbar') %>
+    </div>
+    <div class="image-container">
+      <div class="image">
+        <a href="#" id="launch">
+          <img src="http://www.sneeze.com/wp-content/uploads/2016/04/sneezing-kids-1024x681.jpg"></img>
+        </a>
+      </div>
+      <div class="image">
+        <a href="#">
+          <img src="http://www.speechbuddy.com/blog/wp-content/uploads/2012/09/speech116.jpg"></img>
+        </a>
+      </div>
+      <div class="image">
+        <a href="#">
+          <img src="https://uploads1.bundoo.com/wp-content/uploads/2014/12/Why-does-my-child-need-to-pee-so-muchTHUMB-800x500.png"></img>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+  <script src="js/lightgallery.min.js"></script>
+
+  <!-- lightgallery plugins -->
+  <script src="js/lg-thumbnail.min.js"></script>
+  <script src="js/lg-fullscreen.min.js"></script>
+  <script>
+    $('#launch').on('click', function() {
+   
+      $(this).lightGallery({
+          dynamic: true,
+          download: false,
+          dynamicEl: [{
+              "src": 'http://www.sneeze.com/wp-content/uploads/2016/04/sneezing-kids-1024x681.jpg',
+              'thumb': 'http://www.sneeze.com/wp-content/uploads/2016/04/sneezing-kids-1024x681.jpg',
+              'subHtml': '<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>'
+          }, {
+              "src": 'http://www.sneeze.com/wp-content/uploads/2016/04/sneezing-kids-1024x681.jpg',
+              'thumb': 'http://www.sneeze.com/wp-content/uploads/2016/04/sneezing-kids-1024x681.jpg',
+              'subHtml': '<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>'
+          },{
+              "src": 'http://www.sneeze.com/wp-content/uploads/2016/04/sneezing-kids-1024x681.jpg',
+              'thumb': 'http://www.sneeze.com/wp-content/uploads/2016/04/sneezing-kids-1024x681.jpg',
+              'subHtml': '<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>'
+          }]
+      })
+   
+    });
+  </script>
+</body>
+</html>
