@@ -5,14 +5,14 @@
   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link type="text/css" rel="stylesheet" href="css/lightGallery.css" /> 
+  <link type="text/css" rel="stylesheet" href="css/lightgallery.css" /> 
   <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body class="about">
-  <div class="header-container">
-    <%- include('partials/navbar') %>
-  </div>
   <div class="wrapper">
+    <div class="header-container">
+      <%- include('partials/navbar') %>
+    </div>
     <div class="image-container col-md-7">
       <img src="/img/gallery/Wold Family-2.jpg"></img>
     </div>
@@ -32,6 +32,30 @@
   <!-- lightgallery plugins -->
   <script src="js/lg-thumbnail.min.js"></script>
   <script src="js/lg-fullscreen.min.js"></script>
+  <script>
+    $('.image, #gallery').on('click', function() {
+   
+      var arr = [{
+              "src": '/img/gallery/Wold Family.jpg',
+              'thumb': '/img/thumbnails/Wold Family-10.jpg',
+              'subHtml': ''
+          }];
+
+      for (var x = 2; x <= 48; x++) {
+        arr.push({
+            "src": '/img/gallery/Wold Family-'+x+'.jpg',
+            'thumb': '/img/thumbnails/Wold Family-'+x+'.jpg',
+            'subHtml': ''
+        })
+      }
+      $(this).lightGallery({
+          dynamic: true,
+          download: false,
+          dynamicEl: arr
+      })
+   
+    });
+  </script>
   </script>
 </body>
 </html>

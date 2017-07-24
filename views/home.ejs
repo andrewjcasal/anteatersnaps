@@ -16,17 +16,17 @@
     <div class="image-container">
       <div class="image">
         <a href="#" id="launch">
-          <img src="/img/gallery/Wold Family-10.jpg"></img>
+          <img src="/img/gallery/Wold Family-41.jpg"></img>
         </a>
       </div>
       <div class="image">
         <a href="#">
-          <img src="/img/gallery/Wold Family-12.jpg"></img>
+          <img src="/img/gallery/Wold Family-48.jpg"></img>
         </a>
       </div>
       <div class="image">
         <a href="#">
-          <img src="/img/gallery/Wold Family-13.jpg"></img>
+          <img src="/img/gallery/Wold Family-31.jpg"></img>
         </a>
       </div>
     </div>
@@ -45,102 +45,23 @@
   <script>
     $('.image, #gallery').on('click', function() {
    
+      var arr = [{
+              "src": '/img/gallery/Wold Family.jpg',
+              'thumb': '/img/thumbnails/Wold Family-10.jpg',
+              'subHtml': ''
+          }];
+
+      for (var x = 2; x <= 48; x++) {
+        arr.push({
+            "src": '/img/gallery/Wold Family-'+x+'.jpg',
+            'thumb': '/img/thumbnails/Wold Family-'+x+'.jpg',
+            'subHtml': ''
+        })
+      }
       $(this).lightGallery({
           dynamic: true,
           download: false,
-          dynamicEl: [{
-              "src": '/img/gallery/Wold Family-10.jpg',
-              'thumb': '/img/thumbnails/Wold Family-10.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-12.jpg',
-              'thumb': '/img/thumbnails/Wold Family-12.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-13.jpg',
-              'thumb': '/img/thumbnails/Wold Family-13.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-17.jpg',
-              'thumb': '/img/thumbnails/Wold Family-17.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-19.jpg',
-              'thumb': '/img/thumbnails/Wold Family-19.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-2.jpg',
-              'thumb': '/img/thumbnails/Wold Family-2.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-24.jpg',
-              'thumb': '/img/thumbnails/Wold Family-24.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-25.jpg',
-              'thumb': '/img/thumbnails/Wold Family-25.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-28.jpg',
-              'thumb': '/img/thumbnails/Wold Family-28.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-29.jpg',
-              'thumb': '/img/thumbnails/Wold Family-29.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-3.jpg',
-              'thumb': '/img/thumbnails/Wold Family-3.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-30.jpg',
-              'thumb': '/img/thumbnails/Wold Family-30.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-31.jpg',
-              'thumb': '/img/thumbnails/Wold Family-31.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-35.jpg',
-              'thumb': '/img/thumbnails/Wold Family-35.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-4.jpg',
-              'thumb': '/img/thumbnails/Wold Family-4.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-43.jpg',
-              'thumb': '/img/thumbnails/Wold Family-43.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-45.jpg',
-              'thumb': '/img/thumbnails/Wold Family-45.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-46.jpg',
-              'thumb': '/img/thumbnails/Wold Family-46.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-6.jpg',
-              'thumb': '/img/thumbnails/Wold Family-6.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-7.jpg',
-              'thumb': '/img/thumbnails/Wold Family-7.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-8.jpg',
-              'thumb': '/img/thumbnails/Wold Family-8.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family-9.jpg',
-              'thumb': '/img/thumbnails/Wold Family-9.jpg',
-              'subHtml': ''
-          },{
-              "src": '/img/gallery/Wold Family.jpg',
-              'thumb': '/img/thumbnails/Wold Family.jpg',
-              'subHtml': ''
-          }]
+          dynamicEl: arr
       })
    
     });

@@ -89,8 +89,6 @@
   text-align: center;
 }
 .image {
-  background-color: #ccc;
-  height: 300px;
   width: 342px;
   display: inline-block;
   margin: 0 10px;
@@ -98,7 +96,7 @@
 }
 
 .image img {
-  height: 100%;
+  width: 100%;
 }
 
 .about img {
@@ -109,6 +107,10 @@
 .about .wrapper h1 {
   font-size: 28px;
   margin-top: 0;
+}
+
+.about .wrapper h2 {
+  font-size: 18px;
 }
 
 #image1 {
