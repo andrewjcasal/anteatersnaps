@@ -19,9 +19,9 @@
 }
 
 .lg-actions .lg-next, .lg-actions .lg-prev {
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: #efefef;
   border-radius: 2px;
-  color: #999;
+  color: #969696;
   cursor: pointer;
   display: block;
   font-size: 22px;
@@ -38,7 +38,7 @@
   opacity: 0.5;
 }
 .lg-actions .lg-next:hover, .lg-actions .lg-prev:hover {
-  color: #FFF;
+  color: #000;
 }
 .lg-actions .lg-next {
   right: 20px;
@@ -160,10 +160,10 @@
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: #efefef;
 }
 .lg-toolbar .lg-icon {
-  color: #999;
+  color: #969696;
   cursor: pointer;
   float: right;
   font-size: 24px;
@@ -179,7 +179,7 @@
   transition: color 0.2s linear;
 }
 .lg-toolbar .lg-icon:hover {
-  color: #FFF;
+  color: #000;
 }
 .lg-toolbar .lg-close:after {
   content: "\e070";
@@ -211,7 +211,7 @@
 }
 
 #lg-counter {
-  color: #999;
+  color: #969696;
   display: inline-block;
   font-size: 16px;
   padding-left: 20px;
@@ -263,7 +263,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-thumb-outer {
-  background-color: #0D0A0A;
+  background-color: #efefef;
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -305,13 +305,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin-bottom: -5px;
 }
 .lg-outer .lg-thumb-item {
-  border-radius: 5px;
   cursor: pointer;
   float: left;
   overflow: hidden;
   height: 100%;
-  border: 2px solid #FFF;
-  border-radius: 4px;
+  border-radius: 0;
   margin-bottom: 5px;
 }
 @media (min-width: 1025px) {
@@ -344,9 +342,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   bottom: 100px;
 }
 .lg-outer .lg-toogle-thumb {
-  background-color: #0D0A0A;
+  background-color: #efefef;
   border-radius: 2px 2px 0 0;
-  color: #999;
+  color: #969696;
   cursor: pointer;
   font-size: 24px;
   height: 39px;
@@ -362,7 +360,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   content: "\e1ff";
 }
 .lg-outer .lg-toogle-thumb:hover {
-  color: #FFF;
+  color: #000;
 }
 
 .lg-outer .lg-video-cont {
@@ -890,7 +888,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   right: 0;
   bottom: 0;
   z-index: 1040;
-  background-color: #000;
+  background-color: #fff;
   opacity: 0;
   -webkit-transition: opacity 0.15s ease 0s;
   -o-transition: opacity 0.15s ease 0s;
